@@ -1,0 +1,46 @@
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .container {
+    max-width: 80rem;
+    padding: 3.2rem 2.4rem 2.4rem 2.4rem;
+  }
+  .table-container {
+    max-width: 40rem;
+    margin: 2.4rem auto;
+  }
+  .primary-heading {
+    font-size: 5.2rem;
+  }
+  .secondary-heading {
+    font-size: 4rem;
+  }
+  .btn {
+    padding: 1.2rem 2.4rem;
+  }
+  .navigation-list {
+    justify-content: space-between;
+  }
+  .card-header {
+    height: 18rem;
+    padding-top: 4.8rem;
+  }
+  .table {
+    font-size: 1.8rem;
+  }
+  th {
+    padding: 1.2rem 1.6rem;
+  }
+  td {
+    padding: 0.8rem;
+  }
+  th {
+    font-size: 2rem;
+  }
+}

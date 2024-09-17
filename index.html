@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/general.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,26 +13,80 @@
       rel="stylesheet"
     />
     <script defer src="js/script.js"></script>
-    <script defer src="js/db.js"></script>
+    <script defer src="js/calculation.js"></script>
     <title>Travwl route</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="primary-heading">Travel to GUILIN from SHANGHAI</h1>
+        <h1 class="primary-heading">游桂林</h1>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li><button class="btn btn-food">FOOD</button></li>
-            <li><button class="btn btn-budget">Budget</button></li>
-            <li><button class="btn btn-route">Route</button></li>
+            <li><button class="btn btn-route">路线</button></li>
+            <li><button class="btn btn-budget">预算</button></li>
+
+            <li><button class="btn btn-food">美食</button></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="day-1">
-        <div class="card card-budget table-container">
-          <div class="card-header">
+      <!-- ********************************** -->
+      <!-- ********DAY   1************************** -->
+      <!-- ********************************** -->
+      <div class="grid day-1">
+        <div class="card card-food table-container hidden">
+          <div class="card-header card-img-1">
+            <h2 class="secondary-heading">Day 1 桂林</h2>
+          </div>
+
+          <table class="food-table">
+            <thead>
+              <tr>
+                <th>店名</th>
+                <th>推荐菜</th>
+                <th>位置</th>
+                <th>价格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">老表记</td>
+                <td contenteditable="true">炒螺蛳粉</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">
+                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
+                  ex eaque ad a, voluptas voluptates hic libero asperiores
+                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
+                </td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card card-budget table-container hidden">
+          <div class="card-header card-img-1">
             <h2 class="secondary-heading">Day 1 桂林</h2>
           </div>
 
@@ -46,92 +101,44 @@
             </thead>
             <tbody>
               <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">坐火车到桂林</td>
+                <td contenteditable="true" class="price-item">322</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
               <tr>
-                <td contenteditable="true">
-                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
-                  ex eaque ad a, voluptas voluptates hic libero asperiores
-                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
-                </td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">芦笛岩</td>
+                <td contenteditable="true" class="price-item">67</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
-
               <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">桂林酒店住宿</td>
+                <td contenteditable="true" class="price-item">199</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
-
               <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">桂林站打车到酒店，景区</td>
+                <td contenteditable="true" class="price-item">60</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">吃饭</td>
+                <td contenteditable="true" class="price-item">200</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
             </tbody>
           </table>
+          <p class="total-price-label">
+            共计 <span class="total-price">?</span>
+          </p>
         </div>
 
-        <div class="card card-food table-container hidden">
-          <div class="card-header">
-            <h2 class="secondary-heading">Day 1 桂林</h2>
-          </div>
-
-          <table class="food-table">
-            <thead>
-              <tr>
-                <th>店名</th>
-                <th>推荐菜</th>
-                <th>位置</th>
-                <th>价格</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
-              </tr>
-              <tr>
-                <td contenteditable="true">
-                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
-                  ex eaque ad a, voluptas voluptates hic libero asperiores
-                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
-                </td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
-              </tr>
-
-              <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
-              </tr>
-
-              <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
-                <td contenteditable="true">3</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="card card-route table-container hidden">
-          <div class="card-header">
+        <div class="card card-route table-container">
+          <div class="card-header card-img-1">
             <h2 class="secondary-heading">Day 1 桂林</h2>
           </div>
 
@@ -145,49 +152,70 @@
             </thead>
             <tbody>
               <tr>
-                <td contenteditable="true">早上十点（预计2h）</td>
-                <td contenteditable="true">桂林（乘船）->阳朔</td>
-                <td contenteditable="true">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  facilis dolorum asperiores ipsa laborum non aliquam eius
-                  pariatur, molestias sint qui facere rem, expedita quo alias,
-                  tempore dolor at inventore?
-                </td>
-              </tr>
-              <tr>
-                <td contenteditable="true">
-                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
-                  ex eaque ad a, voluptas voluptates hic libero asperiores
-                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
-                </td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">中午12：17到站</td>
+                <td contenteditable="true">火车抵达桂林站</td>
+                <td contenteditable="true"></td>
               </tr>
 
               <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">约2小时</td>
+                <td contenteditable="true">去酒店，吃饭</td>
+                <td contenteditable="true"></td>
               </tr>
 
               <tr>
-                <td contenteditable="true">FLY TO GUILIN</td>
-                <td contenteditable="true">420</td>
-                <td contenteditable="true">3</td>
+                <td contenteditable="true">14：30到达</td>
+                <td contenteditable="true">芦笛岩（约2h）</td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true">16:30到达</td>
+                <td contenteditable="true">象鼻山(爬山约45min)</td>
+                <td contenteditable="true">
+                  1.象鼻山从3号门进，2号门最佳观景位置，1号最高开始爬山
+                  （18：00禁止进入）
+                </td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">18：00出山</td>
+                <td contenteditable="true">
+                  两江四湖（杉湖码头->正阳楼步行街->东西巷（约30min）
+                </td>
+                <td contenteditable="true">（美食商业街）</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">吃饭1h</td>
+                <td contenteditable="true">xx家</td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true">饭后步行</td>
+                <td contenteditable="true">靖江王府->逍遥楼</td>
+
+                <td contenteditable="true">
+                  逍遥楼免费的，其他外面拍拍照就行了，但逍遥楼估计来不及进去
+                </td>
+              </tr>
+              <tr>
+                <td contenteditable="true">20：00回酒店</td>
+                <td contenteditable="true">游泳</td>
+                <td contenteditable="true"></td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- <div class="day-3">
-        <div class="card card-budget table-container">
-          <div class="card-header">
-            <h2 class="secondary-heading">Day 1 桂林</h2>
+      <!-- ********DAY   4************************** -->
+      <!-- ********************************** -->
+      <div class="grid day-2">
+        <div class="card card-budget table-container hidden">
+          <div class="card-header card-img-4">
+            <h2 class="secondary-heading">Day 2 龙脊梯田</h2>
           </div>
 
-          <table class="budget-table">
+          <table class="budget-table" id="budget-table-4">
             <thead>
               <tr>
                 <th>事项</th>
@@ -198,43 +226,40 @@
             </thead>
             <tbody>
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">桂林-龙脊一日游</td>
+                <td contenteditable="true" class="price-item">108</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
               <tr>
-                <td>
-                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
-                  ex eaque ad a, voluptas voluptates hic libero asperiores
-                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
-                </td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">索道</td>
+                <td contenteditable="true" class="price-item">60</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
 
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">住宿</td>
+                <td contenteditable="true" class="price-item">199</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item"></td>
               </tr>
-
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">吃饭</td>
+                <td contenteditable="true" class="price-item">200</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
               </tr>
             </tbody>
           </table>
+          <p class="total-price-label">
+            共计 <span class="total-price">?</span>
+          </p>
         </div>
 
         <div class="card card-food table-container hidden">
-          <div class="card-header">
-            <h2 class="secondary-heading">Day 1 桂林</h2>
+          <div class="card-header card-img-4">
+            <h2 class="secondary-heading">Day 4 龙脊梯田</h2>
           </div>
 
           <table class="food-table">
@@ -248,43 +273,43 @@
             </thead>
             <tbody>
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
               <tr>
-                <td>
+                <td contenteditable="true">
                   FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit. Ratione, corporis. Ducimus esse doloremque
                   ex eaque ad a, voluptas voluptates hic libero asperiores
                   aspernatur optio? Quia ducimus repellat eveniet quos expedita.
                 </td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
 
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
 
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
-                <td>3</td>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="card card-route table-container hidden">
-          <div class="card-header">
-            <h2 class="secondary-heading">Day 1 桂林</h2>
+        <div class="card card-route table-container">
+          <div class="card-header card-img-4">
+            <h2 class="secondary-heading">Day 2 龙脊梯田</h2>
           </div>
 
           <table class="route-table">
@@ -297,41 +322,443 @@
             </thead>
             <tbody>
               <tr>
-                <td>早上十点（预计2h）</td>
-                <td>桂林（乘船）->阳朔</td>
-                <td>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                  facilis dolorum asperiores ipsa laborum non aliquam eius
-                  pariatur, molestias sint qui facere rem, expedita quo alias,
-                  tempore dolor at inventore?
-                </td>
+                <td contenteditable="true">早上7：30</td>
+                <td contenteditable="true">桂林-龙脊一日游</td>
+                <td contenteditable="true">山路不平，贴晕车贴</td>
               </tr>
               <tr>
-                <td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">中午吃饭</td>
+                <td contenteditable="true">自带吃的，景区比较坑</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true"></td>
+                <td contenteditable="true">18：30回酒店，吃饭游泳</td>
+                <td contenteditable="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ********DAY   3************************** -->
+      <!-- ********************************** -->
+      <div class="grid day-3">
+        <div class="card card-budget table-container hidden">
+          <div class="card-header card-img-2">
+            <h2 class="secondary-heading">Day 3 阳朔</h2>
+          </div>
+
+          <table class="budget-table" id="budget-table-2">
+            <thead>
+              <tr>
+                <th>事项</th>
+                <th>价格</th>
+                <th>人数</th>
+                <th>总价</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">桂林坐邮轮到阳朔</td>
+                <td contenteditable="true" class="price-item">170</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">租车</td>
+                <td contenteditable="true" class="price-item">20</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">酒店</td>
+                <td contenteditable="true" class="price-item">300</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">吃饭</td>
+                <td contenteditable="true" class="price-item">220</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item"></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="total-price-label">
+            共计 <span class="total-price">?</span>
+          </p>
+        </div>
+
+        <div class="card card-food table-container hidden">
+          <div class="card-header card-img-2">
+            <h2 class="secondary-heading">Day 2 阳朔</h2>
+          </div>
+
+          <table class="food-table">
+            <thead>
+              <tr>
+                <th>店名</th>
+                <th>推荐菜</th>
+                <th>位置</th>
+                <th>价格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">
                   FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit. Ratione, corporis. Ducimus esse doloremque
                   ex eaque ad a, voluptas voluptates hic libero asperiores
                   aspernatur optio? Quia ducimus repellat eveniet quos expedita.
                 </td>
-                <td>420</td>
-                <td>3</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
 
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
 
               <tr>
-                <td>FLY TO GUILIN</td>
-                <td>420</td>
-                <td>3</td>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>  -->
+
+        <div class="card card-route table-container">
+          <div class="card-header card-img-2">
+            <h2 class="secondary-heading">Day 3 阳朔</h2>
+          </div>
+
+          <table class="route-table">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>路线</th>
+                <th>注意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">10：30导游接车</td>
+                <td contenteditable="true">邮轮码头</td>
+                <td contenteditable="true">注意邮轮需要自己买点东西吃</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">中午12：00</td>
+                <td contenteditable="true">桂林邮轮->阳朔（约4h）</td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true">17：30</td>
+                <td contenteditable="true">望江楼吃饭，去酒店租车</td>
+                <td contenteditable="true"></td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">17：30出发</td>
+                <td contenteditable="true">十里画廊骑行（约2h）</td>
+                <td contenteditable="true"></td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">20：00</td>
+                <td contenteditable="true">回酒店，江边踩水</td>
+                <td contenteditable="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ********DAY   4************************** -->
+      <!-- ********************************** -->
+      <div class="grid day-4">
+        <div class="card card-budget table-container hidden">
+          <div class="card-header card-img-3">
+            <h2 class="secondary-heading">Day 4 阳朔</h2>
+          </div>
+
+          <table class="budget-table" id="budget-table-2">
+            <thead>
+              <tr>
+                <th>事项</th>
+                <th>价格</th>
+                <th>人数</th>
+                <th>总价</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">如意峰</td>
+                <td contenteditable="true" class="price-item">180</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">遇龙河竹筏</td>
+                <td contenteditable="true" class="price-item">90</td>
+                <td contenteditable="true" class="number-of-people">3</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">酒店</td>
+                <td contenteditable="true" class="price-item">199</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">吃饭</td>
+                <td contenteditable="true" class="price-item">200</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">路费（回桂林100，如意峰往返100）</td>
+                <td contenteditable="true" class="price-item">200</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="total-price-label">
+            共计 <span class="total-price">?</span>
+          </p>
+        </div>
+
+        <div class="card card-food table-container hidden">
+          <div class="card-header card-img-3">
+            <h2 class="secondary-heading">Day 4 阳朔</h2>
+          </div>
+
+          <table class="food-table">
+            <thead>
+              <tr>
+                <th>店名</th>
+                <th>推荐菜</th>
+                <th>位置</th>
+                <th>价格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">
+                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
+                  ex eaque ad a, voluptas voluptates hic libero asperiores
+                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
+                </td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card card-route table-container">
+          <div class="card-header card-img-3">
+            <h2 class="secondary-heading">Day 4 阳朔</h2>
+          </div>
+
+          <table class="route-table">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>路线</th>
+                <th>注意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">9：30出发到如意峰</td>
+                <td contenteditable="true">如意峰（游玩约3-4h）</td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true">12;00</td>
+                <td contenteditable="true">吃饭</td>
+                <td contenteditable="true">找能寄存行李的酒店</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">15：00到</td>
+                <td contenteditable="true">遇龙河竹筏（龙潭码头？）</td>
+                <td contenteditable="true"></td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">17：00从阳朔出发返回桂林</td>
+                <td contenteditable="true">康福特酒店，吃饭</td>
+                <td contenteditable="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ********DAY   5************************** -->
+      <!-- ********************************** -->
+      <div class="grid day-5">
+        <div class="card card-budget table-container hidden">
+          <div class="card-header card-img-5">
+            <h2 class="secondary-heading">Day 5 桂林-上海</h2>
+          </div>
+
+          <table class="budget-table" id="budget-table-2">
+            <thead>
+              <tr>
+                <th>事项</th>
+                <th>价格</th>
+                <th>人数</th>
+                <th>总价</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">机场打车费</td>
+                <td contenteditable="true" class="price-item">50</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">1</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">回桂林火车票</td>
+                <td contenteditable="true" class="price-item">1018</td>
+                <td contenteditable="true" class="number-of-people">1</td>
+                <td contenteditable="true" class="total-item">3</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="total-price-label">
+            共计 <span class="total-price">?</span>
+          </p>
+        </div>
+
+        <div class="card card-food table-container hidden">
+          <div class="card-header card-img-5">
+            <h2 class="secondary-heading">Day 5 桂林-上海</h2>
+          </div>
+
+          <table class="food-table">
+            <thead>
+              <tr>
+                <th>店名</th>
+                <th>推荐菜</th>
+                <th>位置</th>
+                <th>价格</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+              <tr>
+                <td contenteditable="true">
+                  FLY TO GUILIN Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Ratione, corporis. Ducimus esse doloremque
+                  ex eaque ad a, voluptas voluptates hic libero asperiores
+                  aspernatur optio? Quia ducimus repellat eveniet quos expedita.
+                </td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">FLY TO GUILIN</td>
+                <td contenteditable="true">420</td>
+                <td contenteditable="true">3</td>
+                <td contenteditable="true">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card card-route table-container">
+          <div class="card-header card-img-5">
+            <h2 class="secondary-heading">Day 5 桂林-上海</h2>
+          </div>
+
+          <table class="route-table">
+            <thead>
+              <tr>
+                <th>时间</th>
+                <th>路线</th>
+                <th>注意</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td contenteditable="true">早上（预计2h）</td>
+                <td contenteditable="true">龙脊梯田日出</td>
+                <td contenteditable="true"></td>
+              </tr>
+              <tr>
+                <td contenteditable="true">11：30返回（预计3h）</td>
+                <td contenteditable="true">返回桂林</td>
+                <td contenteditable="true"></td>
+              </tr>
+
+              <tr>
+                <td contenteditable="true">19：00火车</td>
+                <td contenteditable="true">回家</td>
+                <td contenteditable="true"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card-budget table-container hidden">
+        <h1 class="secondary-heading">
+          总计<span class="guilin-price">?</span>
+        </h1>
+      </div>
     </main>
   </body>
 </html>

@@ -91,14 +91,69 @@ header {
 }
 
 /* body */
+/* card -img*/
+.card-img-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 241, 231, 0.433),
+      rgba(231, 248, 243, 0.119)
+    ),
+    url(../img/xiangbi.jpg);
+}
+.card-img-2 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 241, 231, 0.395),
+      rgba(231, 248, 243, 0.119)
+    ),
+    url(../img/zhufa.jpg);
+}
+.card-img-3 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 241, 231, 0.386),
+      rgba(231, 248, 243, 0.073)
+    ),
+    url(../img/xianggong.jpg);
+}
+.card-img-4 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 241, 231, 0.315),
+      rgba(231, 248, 243, 0.119)
+    ),
+    url(../img/titian1.jpg);
+}
+.card-img-5 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(208, 241, 231, 0.315),
+      rgba(231, 248, 243, 0.119)
+    ),
+    url(../img/liangjiang.jpg);
+}
 
 .budget-table th:nth-child(1) {
   width: 50%;
 }
-
+.total-price-label {
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: right;
+  padding: 1.2rem;
+  color: #053728;
+}
 .food-table th:nth-child(2) {
   width: 50%;
 }
+.route-table th:nth-child(1) {
+  width: 35%;
+}
 .route-table th:nth-child(2) {
-  width: 50%;
+  width: 35%;
+}
+.route-table tr td:nth-child(3) {
+  font-size: 1.4rem;
 }

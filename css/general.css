@@ -29,7 +29,8 @@
 }
 
 .secondary-heading {
-  font-size: 4.8rem;
+  margin-top: 3rem;
+  font-size: 4.4rem;
   color: rgba(4, 37, 27, 0.942);
 }
 
@@ -44,6 +45,7 @@
   font-family: inherit;
   line-height: 1.5;
   color: #eee;
+  cursor: pointer;
 }
 
 /* CARD */
@@ -54,12 +56,6 @@
 }
 
 .card-header {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(208, 241, 231, 0.784),
-      rgba(231, 248, 243, 0.119)
-    ),
-    url(../img/Guilin.jfif);
   height: 25rem;
   background-size: cover;
   background-position: center;
@@ -77,11 +73,12 @@ table {
   color: #111;
   background: #d0f1e7;
 }
-th,
-td {
+th {
   padding: 1.6rem 2.4rem;
 }
-
+td {
+  padding: 1rem 1.2rem;
+}
 th {
   font-size: 2.4rem;
   font-weight: 700;
